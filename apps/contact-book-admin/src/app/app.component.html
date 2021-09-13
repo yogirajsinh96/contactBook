@@ -1,0 +1,17 @@
+<div class="main">
+  <mat-drawer-container class="main">
+    <mat-drawer mode="side" class="side-nav" opened>
+      <div class="menu-contant">
+        <span class="menu-item"><h1>Menu</h1></span>
+        <span class="menu-item"><a routerLink="">Home</a></span>
+        <span class="menu-item"><a routerLink="userList"> User List </a></span>
+        <!-- <span class="menu-item"
+          ><a routerLink="contactList"> Contact List </a></span
+        > -->
+      </div>
+    </mat-drawer>
+    <mat-drawer-content class="body">
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>

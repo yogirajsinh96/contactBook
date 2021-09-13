@@ -1,0 +1,48 @@
+<div [class]='displayStyple.display' >
+    <div class="sub" >
+        <div class="close" (click)="closePopup(container)">
+            X
+        </div>
+        <div class="btn" [class]='display'>
+            <button mat-raised-button color="primary"  (click)="openFile(file)" >Select csv file</button>
+            <input type="file" #file class="hidden" name="document" (change)="onChange(file,container)" accept=".csv" />
+        </div>
+        <div class="err"  [class]='disaplyTable'>
+            Total Error : {{err}}
+            Selected Contacts : {{selectedContacts}}
+        </div>
+        <div class="table" #container [class]='disaplyTable'>
+            <table style='border:1px'>
+                <tbody *ngFor="let a of contact; let i =index" >
+
+                    <tr  *ngIf='i==0' >
+                        <td ><input type="checkbox" #select (click)="selectAll(select)"  /></td>
+                            <td #thenBlock></td>
+                            <td #thenBlock></td>
+                            <td #thenBlock></td>
+                            <td #thenBlock></td>
+                    </tr>
+
+                    <tr  *ngIf=' a.email=="" ||a.mobile==""|| a.name=="" || a.qualification=="" ' style="background-color: red;"  >
+                        <td ><input type="checkbox" id="checkbox{{i}}" disabled #check (click)='checked(a.id!,check)' /></td>
+                            <td #thenBlock>{{a.name}}</td>
+                            <td #thenBlock>{{a.qualification}}</td>
+                            <td #thenBlock>{{a.email}}</td>
+                            <td #thenBlock>{{a.mobile}}</td>
+                    </tr>
+                    <tr *ngIf=' a.email!="" &&a.mobile!=""&& a.name!="" && a.qualification!="" ' >
+                        <td ><input type="checkbox" #check (click)='checked(a.id!,check)' /></td>
+                            <td #thenBlock>{{a.name}}</td>
+                            <td #thenBlock>{{a.qualification}}</td>
+                            <td #thenBlock>{{a.email}}</td>
+                            <td #thenBlock>{{a.mobile}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+            <button mat-raised-button color="primary" [class]='displayBtn' (click)="importContact(container)" >Import Contact</button>
+        
+    </div>
+</div>
+
+<!-- {{displayStyple}} -->

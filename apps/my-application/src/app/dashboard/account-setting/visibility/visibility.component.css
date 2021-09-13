@@ -1,0 +1,83 @@
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.table{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.head-title{
+    height: 20%;
+    width: 95%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0px 1px 5px 2px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 1rem;
+    width: 70%;
+}
+.details{
+    width: 15%;
+}
+
+.table-body{
+    height: 80%;
+    width: 95%;
+}
+
+.row{
+    display: flex;
+}
+
+.icon{
+    margin-left: 1rem;
+}
+
+.data{
+    display: flex;
+    width: 70%;
+}
+
+.check-box{
+    width: 15%;
+    text-align: center;
+}
+.center-title{
+    justify-content: center;
+}
+.bottom-btns{
+    height: 10%;
+    width: 100%;
+    position: relative;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    width: 15%;
+    height: 80%;
+    margin-left: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    color: #0080ff;
+    border: 2px solid #0080ff;
+}
+
+.fill{
+    background-color: #0080ff;
+    color: white;
+}

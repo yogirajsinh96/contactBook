@@ -1,0 +1,43 @@
+<div class="main">
+    <div class="head-options">
+        <div class="function-btn" routerLink="/dash/announcements/add" >
+            <mat-icon >add_circle</mat-icon>
+            <span class="function-txt" >
+                Create
+            </span>
+        </div>
+
+        <div class="function-btn">
+            <mat-icon >sync</mat-icon>
+            <span class="function-txt">
+                Refresh
+            </span>
+        </div>
+
+      
+    </div>
+    <div class="bottom">
+        <div class="left-list">
+            <span class="list">
+                Board Meeting
+            </span>
+
+            <span class="list" *ngFor="let i of obj">
+                {{i.title}}
+            </span>
+        </div>
+        <div class="right-details">
+            <input type="text" class="input">
+            <div class="input div-input" contenteditable="true" ></div>
+        </div>
+        
+    </div>
+    <div class="btns">
+        <button class="btn">EDIT</button>
+        
+        <button class="btn btn-red">DELETE</button>
+        
+        <button class="btn btn-back">Announcement Read Status
+</button>
+    </div>
+</div>

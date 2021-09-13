@@ -1,0 +1,32 @@
+
+<div class="main">
+    <div class="left">
+        <h1>Contact</h1>
+        <br><br>
+        <h1>Book</h1>
+    </div>
+    <div class="right">
+        <div class="card-login">
+            <span class="text-login">
+            Login in to your account
+            </span>
+            <div class="inputs-div">
+                <input type="text" onk placeholder="Email" [(ngModel)]='email' class="inputs" />
+                <input type="password" placeholder="Password" [(ngModel)]='password' class="inputs" />
+                <div class="extra">
+                    <input type="checkbox" /> <span class="font-color"> Remember ME?</span>
+                    <span class="right-font">Forget Password?</span>
+                </div>
+                <button class="btn" [disabled]='btnDissable'  (click)="chk()">LOGIN</button>
+                <div class="sing-up">
+                    Don't have Account? <span class="font-color"> Sign up </span>
+                </div>
+                <div class="sing-up">
+                   <span class="font-color"> Dowanload android app</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+

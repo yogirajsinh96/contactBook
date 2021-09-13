@@ -1,0 +1,98 @@
+<div class="main">
+    <div class="left">
+        <div class="icons">
+            <div class="icon"><mat-icon>person_add</mat-icon> add</div>
+            <div class="icon"><mat-icon>delete</mat-icon>Delete</div>
+            <div class="icon"><mat-icon>notifications</mat-icon>Enable</div>
+            <div class="icon"><mat-icon>notifications_off</mat-icon>Disable</div>
+        </div>
+
+        <div class="left-list">
+            <div class="list-item" *ngFor="let enrollment of listEnrollment ">
+                <div class="qr-icon">
+                    <mat-icon class="qr-icons">qr_code_2</mat-icon>
+                </div>
+                <div class="list-details">
+                    {{ enrollment.name}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="form">
+            <div class="left-form">
+
+                <div class="form-txt-div-added">
+                    <form [formGroup]="form"  >
+                         <formly-form [form]="form" [fields]="fields" [model]="model" ></formly-form>
+                    </form>
+                    
+                </div>
+
+                <!-- <div class="form-txt-div">
+                    <span class="form-txt">QR-code Name :</span>
+                </div>
+                <div class="form-txt-div">
+                    <input type="txt" class="input" />
+                </div>
+
+                <div class="form-txt-div">
+                    <span class="form-txt">Login ID :</span>
+                </div>
+                <div class="form-txt-div">
+                    <input type="txt" class="input" />
+                </div>
+
+                <div class="form-txt-div">
+                    <span class="form-txt">Password :</span>
+                </div>
+                <div class="form-txt-div">
+                    <input type="txt" class="input" />
+                </div>
+
+                <div class="form-txt-div">
+                    <span class="form-txt">Active Devices :</span>
+                </div>
+                <div class="form-txt-div">
+                    <input type="txt" class="input" />
+                </div>
+
+                <div class="form-txt-div">
+                    <span class="form-txt">QR Code status :</span>
+                </div>
+                <div class="form-txt-div">
+                    <input type="txt" class="input" />
+                </div>
+
+                <div class="form-txt-div">
+                    <span class="form-txt">Device Name Type :</span>
+                </div>
+                <div class="form-txt-div">
+                    <input type="txt" class="input" />
+                </div> -->
+
+                <!-- <div class="form-txt-div">
+                    <span class="form-txt">Assign Tag :</span>
+                </div> -->
+                <div class="form-txt-div-btn">
+                    <button class="input btn" (click)="validation()" >ADD</button>
+                </div>
+
+                <!-- <div class="form-txt-div">
+                    <span class="form-txt">Device Settings :</span>
+                </div> -->
+                <div class="form-txt-div-btn">
+                    <button class="input btn">CHANGE</button>
+                </div>
+            </div>
+            <div class="right-form">
+                <div class="right-inner">
+                    <div class="qr-scan"></div>
+                    <button class="qr-btn btn">Download QR Code
+</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

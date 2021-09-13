@@ -1,0 +1,51 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" class="side" opened>
+    <div class="main-side">
+      <div class="logo">
+      <h1 class="logo-txt">
+        <p>
+          Contact<br/>Book
+        </p>
+      </h1>
+
+      </div>
+
+    
+      <div class="menu-list" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/dash">
+        <mat-icon aria-hidden="false"  >contacts</mat-icon> <span class="icon-text">Contacts</span> 
+      </div>
+
+      <div class="menu-list">
+        <mat-icon aria-hidden="false"  >devices</mat-icon> <span class="icon-text">ImportantDevices</span> 
+      </div>
+
+      <div class="menu-list">
+        <mat-icon aria-hidden="false"  >contacts</mat-icon> <span class="icon-text">Contacts</span> 
+      </div>
+
+      <div class="menu-list" routerLinkActive="active"   routerLink="announcements">
+        <mat-icon aria-hidden="false"  >campaign</mat-icon> <span class="icon-text">Announcements</span> 
+      </div>
+
+      <div class="menu-list" routerLinkActive='active' routerLink='setting'>
+        <mat-icon aria-hidden="false"  >settings</mat-icon> <span class="icon-text">Settings</span> 
+      </div>
+
+      <div class="footer">
+        <div class="user-img">
+          
+        </div>
+        <div class="user-name">
+          AbQEDEc<br>def<br>
+          <span class="position">position</span>
+        </div>
+      </div>
+
+  </div>
+  </mat-drawer>
+
+  
+  <mat-drawer-content class="main">
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

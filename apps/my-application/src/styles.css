@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+* {
+  padding: 0;
+  margin: 0;
+  /* user-select: none; */
+}
+html,
+body {
+  height: 100%;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+  background-color: #0080ff;
+}
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+  background-color: skyblue;
+}
+
+.mat-tab-label-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-tab-label {
+  width: 14.28%;
+}
+
+.mat-tab-body-wrapper {
+  height: 100%;
+}
+
+.mat-tab-group {
+  height: 100%;
+}
+.mat-tab-label-active {
+  color: #4ba5ff;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar,
+.mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  color: #4ba5ff;
+}
+
+/* .demo>formly-wrapper-mat-form-field>mat-form-field>div{
+    height: 7%;
+    width: 100%;
+    border-radius: 10px;
+    border: solid 2px #0080ff;
+    background: white;
+} */
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+/* td{
+    padding: 5px;
+} */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

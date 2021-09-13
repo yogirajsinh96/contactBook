@@ -1,0 +1,83 @@
+
+
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.left{
+    height: 100%;
+    width: 50%;
+    background-color: #000119;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.right{
+    background-color: #f3f8fd;
+    height: 100%;
+    width: 50%;
+}
+
+.card-login{
+    position: relative;
+    left: 15%;
+    width: 70%;
+    height: 50%;
+    top: 15%;
+    color: #152c5b;
+}
+
+.inputs{
+    width: 95%;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    height: 10%;
+    border: #3e9ffe 1.7px solid;
+    padding: 10px;
+}
+
+.inputs-div{
+    height: 100%;
+    padding-top: 1rem;
+}
+
+.text-login{
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.extra{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.font-color{
+    color: #0080ff;
+    font-weight: 600;
+}
+
+.right-font{
+    float: right;
+    color: #0080ff;
+}
+
+.btn{
+    background-color: #0080ff;
+    margin-top: 3rem;
+    width: 50%;
+    height: 15%;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 25%;
+    font-size: 1rem;
+}
+
+.sing-up{
+    margin-top: 1rem;
+    text-align: center;
+}

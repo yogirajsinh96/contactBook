@@ -1,0 +1,134 @@
+.main{
+    height: 100%;
+    width: 100%;
+}
+
+.head-options{
+    width: 100%;
+    height: 9.8%;
+    border-bottom: 2px #d0dce7 solid;
+}
+
+.bottom{
+    width: 100%;
+    height: 90%;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    position: relative;
+    top: 5%;
+}
+
+.txt{
+    width: 20%;
+    text-align: right;
+    margin-right: 1rem;
+}
+.inputs{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.input{
+    width: 90%;
+    height: 2.5rem;
+    float: left;
+    border: 2px #85c0fb solid;
+    border-radius: 5px;
+}
+.other-input{
+    width: 50%;
+}
+
+
+.btn{
+    background-color: #0080ff;
+    color: white;
+    border: none;
+}
+
+.input-box{
+    width: 90%;
+    background-color: white;
+    height: 100%;
+}
+.txt1{
+    width: 20%;
+    text-align: right;
+    margin-right: 1rem;
+    position: relative;
+    top: -45%;
+}
+
+.outer-div{
+    width: 80%;
+    height: 100%;
+}
+
+.inner-div{
+    width: 82%;
+    background-color: white;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.other-container{
+    height: 55%;
+}
+.input-details{
+    width: 95%;
+    height: 2.5rem;
+    float: left;
+    border: 2px #85c0fb solid;
+    border-radius: 5px;
+    position: relative;
+    left: 2.5%;
+    margin-top: 1rem;
+    background-color: #f3f8fd;
+}
+.inputs-other{
+    width: 100%;
+}
+.desc{
+    height: 70%;
+}
+
+.text-area{
+    height: 100%;
+}
+
+
+.toggel{
+    position: relative;
+    left: 30%;
+}
+
+.container-toggel{
+    height: 5%;
+}
+
+.mat-slide-toggle-thumb{
+    background-color: #0080ff;
+}
+.btn-size{
+    width: 15%;
+    margin-left: 1rem;
+}
+
+.btn-blank{
+    background-color: white;
+    color: #0080ff;
+    border: #0080ff 2px solid;
+}
+
+form{
+    height: 100%;
+}
+formly-form{
+    height: 100%;
+}

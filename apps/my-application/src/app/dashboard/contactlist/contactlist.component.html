@@ -1,0 +1,77 @@
+<div class="main" [style.overflow]='display'>
+    <div class="head-options">
+        <div class="function-btn" (click)="redirectme()" >
+            <mat-icon >person_add_alt_1</mat-icon>
+            <span class="function-txt" >
+                Add
+            </span>
+        </div>
+
+        <div class="function-btn">
+            <mat-icon >edit</mat-icon>
+            <span class="function-txt">
+                Edit
+            </span>
+        </div>
+
+        <div class="function-btn">
+            <mat-icon >delete</mat-icon>
+            <span class="function-txt">
+                Delete
+            </span>
+        </div>
+
+        <div class="function-btn" (click)="selectMode()" [style]="style">
+            <mat-icon >sell</mat-icon>
+            <span class="function-txt">
+                Assign tag
+            </span>
+        </div>
+
+         <div class="function-btn" (click)="selectImport()" >
+            <mat-icon >get_app</mat-icon>
+            <span class="function-txt">
+                Import
+            </span>
+        </div>
+
+        <div class="function-btn" (click)="selectTable()"  [style]="styleTable" >
+            <mat-icon >toc</mat-icon>
+            <span class="function-txt">
+                Table View
+            </span>
+        </div>
+
+    </div>
+    <div class="bottom">
+        <router-outlet></router-outlet>
+        <router-outlet name="import"></router-outlet>
+        <!-- <router-outlet name='table'></router-outlet> -->
+        <app-table-view [style]="displayTable"></app-table-view>
+    </div>
+
+    <div class="pop-up" [style]="popupStyle">
+        <div class="container">
+            <div class="close" (click)="closePopup()">X</div>
+            <div class="name">
+                {{name}}
+            </div>
+
+            <div class="tags">
+                <div class="tag">
+                    <input type="checkbox" #checkbox1 value="not available" />not available
+                </div>
+                 <div class="tag">
+                    <input type="checkbox" #checkbox2 value="available" />available
+                </div>
+                <div class="pup-up-btn">             
+                    <button mat-raised-button color="primary" (click)="setTags(checkbox1,checkbox2)" >Add Tag</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  
+
+</div>

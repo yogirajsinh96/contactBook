@@ -1,0 +1,91 @@
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.table {
+  margin-top: 5rem;
+  width: 80%;
+}
+.mat-column-demo-position {
+  width: 32px;
+  border-right: 1px solid currentColor;
+  padding-right: 24px;
+  text-align: center;
+}
+
+.mat-column-demo-name {
+  padding-left: 16px;
+  font-size: 20px;
+}
+
+.mat-column-demo-weight {
+  font-style: italic;
+}
+
+.mat-column-demo-symbol {
+  width: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+.btn {
+  background-color: cornflowerblue;
+  width: 100px;
+  height: 40px;
+  border: none;
+  color: white;
+  margin-left: 10%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: red;
+}
+
+.hide-input {
+  display: none;
+}
+
+.edit-popup {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.122);
+}
+
+.dialog {
+  position: relative;
+  height: 50%;
+  width: 50%;
+  background-color: white;
+  border-radius: 10px;
+  top: 25%;
+  left: 25%;
+}
+.close {
+  position: relative;
+  left: 95%;
+  top: 3%;
+}
+.close:hover {
+  color: red;
+  cursor: pointer;
+}
+.body {
+  position: relative;
+  top: 25%;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inputs {
+  height: 10%;
+  width: 80%;
+  margin-bottom: 1rem;
+}

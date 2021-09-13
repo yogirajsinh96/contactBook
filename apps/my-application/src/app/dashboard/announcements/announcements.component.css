@@ -1,0 +1,115 @@
+.main{
+    height: 100%;
+    width: 100%;
+}
+
+.head-options{
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+.function-btn{
+    position: relative;
+    width: 5%;
+    height: 80%;
+    margin-left: 1rem;
+    top:1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.19);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    cursor: pointer;
+
+}
+
+.function-txt{
+    font-size: small;
+}
+
+.bottom{
+    width: 100%;
+    height: 83%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left-list{
+    background-color: white;
+    height: 90%;
+    width: 20%;
+    margin-top: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 1px 5px 2px rgba(0,0,0,0.1);
+    
+}
+.right-details{
+    background-color: white;
+    height: 90%;
+    width: 75%;
+    margin-top: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 1px 5px 2px rgba(0,0,0,0.1);
+    
+    position: relative;
+}
+
+.list{
+    width: initial;
+    background-color: #0080ff;
+    height: 2.5rem;
+    display: block;
+    margin: 1rem;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.input{
+    width: 97%;
+    background-color: #f3f8fd;
+    border: none;
+    height: 3rem;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.div-input{
+    height: 80%;
+}
+.btns{
+    width:60%;
+    height: 1rem;
+    position: relative;
+    left: 25%;
+    
+}
+
+.btn{
+    height: 2.5rem;
+    width: 20%;
+    margin-right: 1rem;
+    border: none;
+    background-color: #0080ff;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-red{
+    background-color: red;
+
+}
+
+.btn-back{
+    border: 2px #0080ff solid;
+    background: white;
+    color: #0080ff;
+    font-weight: bold;
+    width: 50%;
+}

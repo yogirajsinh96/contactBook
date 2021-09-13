@@ -1,0 +1,83 @@
+<div class="main">
+    <div class="table">
+        <div class="head-title">
+            <div class="name">
+                Personal
+            </div>
+            <div class="name details center-title">
+                Show on Consol
+            </div>
+            <div class="name details center-title">
+                Show on Device
+            </div>
+        </div>
+        <div class="table-body">
+            <div *ngFor="let i of obj" class="row">
+                <div class="data">
+                    <div class="icon">
+                        <mat-icon>grid_view</mat-icon>
+                    </div>
+                    <div class="icon">
+                        <mat-icon>edit</mat-icon>
+                    </div>
+                    <div class="icon">
+                        {{i.name}}
+                    </div>
+                </div>
+                <div class="check-box">
+                    <input type="checkbox" />
+                </div>
+                <div class="check-box">
+                    <input type="checkbox" />
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <div class="table">
+        <div class="head-title">
+            <div class="name">
+                Address
+            </div>
+            <div class="name details center-title">
+                <input type="checkbox"/>
+            </div>
+            <div class="name details center-title">
+                                <input type="checkbox"/>
+
+            </div>
+        </div>
+        <div class="table-body">
+            <div *ngFor="let i of obj" class="row">
+                <div class="data">
+                    <div class="icon">
+                        <mat-icon>grid_view</mat-icon>
+                    </div>
+                    <div class="icon">
+                        <mat-icon>edit</mat-icon>
+                    </div>
+                    <div class="icon">
+                        {{i.name}}
+                    </div>
+                </div>
+                <div class="check-box">
+                    <input type="checkbox" />
+                </div>
+                <div class="check-box">
+                    <input type="checkbox" />
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="bottom-btns">
+        <button class="btn fill">
+            Apply Changes
+        </button>
+        <button class="btn">
+            Clear Changes
+        </button>
+        <button class="btn">
+            Restore Default
+        </button>
+    </div>
+</div>

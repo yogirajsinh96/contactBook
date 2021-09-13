@@ -1,0 +1,62 @@
+<div class="main">
+  <div class="scroll" #list>
+    <cdk-virtual-scroll-viewport class="scroll" autosize itemSize="50">
+      <div class="scroll">
+        <mat-card
+          *cdkVirtualFor="let data of obj.obj2 | search: searchbx"
+          (click)="editMode(data.contactId!)"
+          id="{{ data.contactId }}"
+          class="card"
+        >
+          <div class="menu">
+            <button
+              mat-icon-button
+              [matMenuTriggerFor]="menu"
+              aria-label="Example icon-button with a menu"
+            >
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <!-- <mat-slide-toggle (change)="onchange()"></mat-slide-toggle> -->
+
+            <mat-menu #menu="matMenu">
+              <button routerLink="/dash/add/{{ data.contactId }}" mat-menu-item>
+                <mat-icon>edit</mat-icon>
+                <span>Edit</span>
+              </button>
+              <button (click)="deleteContact(data.contactId!)" mat-menu-item>
+                <mat-icon>delete</mat-icon>
+                <span>Delete</span>
+              </button>
+            </mat-menu>
+          </div>
+          <div class="img"></div>
+          <div class="content">
+            <div class="name">
+              {{ data.contatcName }}
+            </div>
+            <div class="center-text">
+              <mat-icon class="icon">school</mat-icon
+              ><span class="icon-txt">{{ data.contactQualification }}</span>
+            </div>
+            <div class="center-text">
+              <mat-icon class="icon">smartphone</mat-icon
+              ><span class="icon-txt">{{ data.contactMobile }}</span>
+            </div>
+            <div class="center-text">
+              <mat-icon class="icon">email</mat-icon
+              ><span class="icon-txt">{{ data.email }}</span>
+            </div>
+            <div class="center-text">
+              <mat-icon class="icon">label</mat-icon
+              ><span class="icon-txt">{{ data.tag }}</span>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+    </cdk-virtual-scroll-viewport>
+  </div>
+</div>
+
+<div class="search-bar">
+  <input type="text" #searchBox (keyup)="search(searchBox)" />
+</div>

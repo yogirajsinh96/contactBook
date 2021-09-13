@@ -1,0 +1,84 @@
+<div class="main">
+  <table mat-table [dataSource]="userList" class="mat-elevation-z8 table">
+    <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="userId">
+      <th mat-header-cell *matHeaderCellDef>No.</th>
+      <td mat-cell *matCellDef="let element">{{ element.userId }}</td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="userName">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let element">
+        <div>{{ element.userName }}</div>
+      </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="userEmail">
+      <th mat-header-cell *matHeaderCellDef>email</th>
+      <td mat-cell *matCellDef="let element">
+        <div>{{ element.userEmail }}</div>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="button">
+      <th mat-header-cell *matHeaderCellDef>Show Contacts</th>
+      <td mat-cell *matCellDef="let element">
+        <button class="btn" routerLink="/contactList/{{ element.userId }}">
+          Show Contacts
+        </button>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="deletebtn">
+      <th mat-header-cell *matHeaderCellDef>delete user</th>
+      <td mat-cell *matCellDef="let element">
+        <button (click)="delete(element.userId)" class="btn delete">
+          Delete user
+        </button>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="editbtn">
+      <th mat-header-cell *matHeaderCellDef>edit user</th>
+      <td mat-cell *matCellDef="let element">
+        <button
+          (click)="edit(element.userName, element.userEmail, element.userId)"
+          class="btn"
+        >
+          edit user
+        </button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</div>
+
+<div [style.display]="display" class="edit-popup">
+  <div class="dialog">
+    <div class="close" (click)="close()">X</div>
+    <div class="body">
+      <input
+        class="inputs"
+        #name
+        value="{{ namets }}"
+        placeholder="Name"
+        type="text"
+      />
+      <input
+        class="inputs"
+        #email
+        value="{{ emailts }}"
+        placeholder="Email"
+        type="text"
+      />
+      <button class="btn" (click)="update(name, email)">Update</button>
+    </div>
+  </div>
+</div>

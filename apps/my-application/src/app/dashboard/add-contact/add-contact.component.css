@@ -1,0 +1,90 @@
+.main{
+    height: 100%;
+    width: 100%;
+}
+
+.head-options{
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+.function-btn{
+    position: relative;
+    width: 5%;
+    height: 80%;
+    margin-left: 1rem;
+    top:1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.19);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    cursor: pointer;
+
+}
+
+.function-txt{
+    font-size: small;
+}
+
+.bottom{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.register-info{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
+.inputs-container{
+    width: 100%;
+    display: flex;
+}
+
+.inputs{
+    width: 48%;
+    margin-right: 2%;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: 2px #379bff solid;
+    margin-top: 2rem;
+    padding-left: 1rem;
+}
+
+.btn-containers{
+    width: 100%;
+    margin-top: auto;
+    position: relative;
+    bottom: 0%;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    height: 10%;
+}
+
+.btn{
+    height: 2.5rem;
+    width: 20%;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 5px;
+    border: 2px #0080ff solid;
+    color: #0080ff;
+    
+    font-weight: bold;
+}
+
+.fill-btn{
+    background: #0080ff;
+    color: white;
+}

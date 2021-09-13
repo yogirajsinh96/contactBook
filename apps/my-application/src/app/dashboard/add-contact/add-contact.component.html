@@ -1,0 +1,76 @@
+<div class="main">
+    <div class="head-options">
+        <div class="function-btn"  >
+            <mat-icon >badge</mat-icon>
+            <span class="function-txt" >
+                Personal
+            </span>
+        </div>
+
+        <div class="function-btn">
+            <mat-icon >pin_drop</mat-icon>
+            <span class="function-txt">
+                Address
+            </span>
+        </div>
+
+        <div class="function-btn">
+            <mat-icon >contact_phone</mat-icon>
+            <span class="function-txt">
+                Contact
+            </span>
+        </div>
+    </div>
+    <div class="bottom">
+        <form class="register-info" [formGroup]="formgrp" >
+            <div class="inputs-container">
+                <input type="text" placeholder="Name" formControlName="name" [(ngModel)]="name" #nameinp  class="inputs" />
+                
+                <div *ngIf="formgrp.get('name')!.invalid && (formgrp.get('name')!.dirty || formgrp.get('name')!.touched)"
+                    class="alert alert-danger">
+                        <div *ngIf="!formgrp.get('name')!.valid" style="color: red;">
+                                Name is required.
+                        </div>
+                </div>
+                    <input placeholder="Qualification" formControlName='qualification' [(ngModel)]="qualification" type="text" class="inputs" />
+                <div *ngIf="formgrp.get('qualification')!.invalid && (formgrp.get('qualification')!.dirty || formgrp.get('qualification')!.touched)"
+                    class="alert alert-danger">
+                        <div *ngIf="!formgrp.get('qualification')!.valid" style="color: red;">
+                                qualification is required.
+                        </div>
+                </div>
+            </div>
+            <div class="inputs-container">
+                <input type="text" placeholder="Mobile number" formControlName='mobile'  [(ngModel)]="mobile" class="inputs" />
+                                <div *ngIf="formgrp.get('mobile')!.invalid && (formgrp.get('mobile')!.dirty || formgrp.get('mobile')!.touched)"
+                    class="alert alert-danger">
+                        <!-- <div *ngIf="!formgrp.get('mobile')!.valid" style="color: red;">
+                                mobile is required.
+                        </div> -->
+                        <div *ngIf="formgrp.get('mobile')!.value.length < 10" style="color: red;">
+                                please enter currect mobile number 
+                        </div>
+                </div>
+                
+
+                <input placeholder="Email" formControlName='email' [(ngModel)]="email" type="text" class="inputs" />
+                  
+                    
+            </div>
+            <!-- <div class="inputs-container">
+                <input type="text" class="inputs" /><input type="text" class="inputs" />
+            </div>
+            <div class="inputs-container">
+                <input type="text" class="inputs" /><input type="text" class="inputs" />
+            </div>
+            <div class="inputs-container">
+                <input type="text" class="inputs" />
+            </div> -->
+            <!-- <div><mat-error *ngIf="formgrp.invalid">error msg</mat-error></div> -->
+            <div class="btn-containers">
+                <button class="btn fill-btn"  (click)="addContact()">SAVE</button>
+                <button class="btn" (click)="goback()" >BACK</button>
+            </div>
+        </form>
+    </div>
+</div>

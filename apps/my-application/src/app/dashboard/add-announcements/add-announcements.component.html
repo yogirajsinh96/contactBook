@@ -1,0 +1,18 @@
+<div class="main">
+    <div class="head-options">
+        
+
+      
+    </div>
+    <div class="bottom">
+          <form [formGroup]="form" >  
+            <formly-form [form]="form" [fields]="fields" [model]="model" >
+
+                  <div class="container">
+                      <button class="input btn-size btn" (click)="getValue()" >SAVE</button>
+                      <button class="input btn-size btn btn-blank">BACK</button>
+                  </div>
+            </formly-form>
+          </form>
+        </div>
+</div>

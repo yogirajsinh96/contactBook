@@ -1,0 +1,63 @@
+.main{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.068);
+    /* display: none; */
+}
+
+.sub{
+    height: 50%;
+    width: 50%;
+    background-color: white;
+    position: relative;
+    top: 25%;
+    left: 25%;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close{
+    position: relative;
+    top: 2%;
+    left: 95%;
+    text-align: left;
+}
+
+.close:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.hidden{
+    display: none;
+}
+.table{
+    /* margin-top: 7%; */
+    margin-left: 5%;
+    height: 70%;
+    width: 90%;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    /* background-color: red; */
+}
+
+.err{
+    color: red;
+}
+
+td{
+    padding: 5px;
+}
